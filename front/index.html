@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Estilo principal de la tabla */
+.table {
+  width: 50%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #333333;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* Encabezados (th) */
+.table th {
+  background-color: #1e293b; /* Azul oscuro elegante */
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.8px;
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 2px solid #0f172a;
+}
+
+/* Celdas de datos (td) */
+.table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+
+/* Filas alternadas (Zebra striping) */
+.table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* Última fila: eliminar el borde inferior para esquinas limpias */
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Efecto al pasar el cursor (Hover) */
+.table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+    </style>
+</head>
+
+<body>
+    <table class="table" >
+        <thead>
+            <th>Id</th>
+            <th>Ciudad</th>
+            <th>Pais</th>
+        </thead>
+        <tbody id="resultado">
+            <tr>
+                <td>39</td>
+                <td>Asuncion</td>
+                <td>Paraguay</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table class="table">
+        <thead>
+            <th>Id</th>
+            <th>Cliente_id</th>
+            <th>Oficina_id</th>
+            <th>Proyecto</th>
+            <th>Fecha-Inicio-Proyecto</th>
+            <th>Fecha-Fin-Proyecto</th>
+            <th>Costo-Proyecto</th>
+        </thead>
+        <tbody id="resultado_pro">
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>Probando</td>
+            <td>FechaPrueba</td>
+            <td>Probo</td>
+            <td>Pruebando</td>
+        </tbody>
+    </table>
+</body>
+<script src="app.js"></script>
+
+</html>
